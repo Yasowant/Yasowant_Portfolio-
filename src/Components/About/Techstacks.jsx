@@ -1,24 +1,18 @@
-import React from "react";
-import "./Techstacks.css";
-import { FaReact, FaNodeJs, FaAws } from "react-icons/fa";
+import React from 'react';
+import './Techstacks.css';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 import {
-  SiRedux,
   SiHtml5,
-  SiMaterialui,
-  SiExpress,
-  SiRedis,
   SiTailwindcss,
   SiNetlify,
   SiJava,
-  SiSpring,
-  SiSpringboot
-  
-  
-} from "react-icons/si";
-import { DiCss3, DiMongodb } from "react-icons/di";
-import { SiJavascript, SiHeroku } from "react-icons/si";
-import { VscGithub } from "react-icons/vsc";
-import { BsBootstrap, BsWordpress } from "react-icons/bs";
+  SiNextdotjs,
+  SiExpress,
+} from 'react-icons/si';
+import { DiCss3, DiMongodb } from 'react-icons/di';
+import { SiJavascript } from 'react-icons/si';
+
+import { BsBootstrap, BsWordpress } from 'react-icons/bs';
 
 export const Techstacks = () => {
   return (
@@ -52,20 +46,20 @@ export const Techstacks = () => {
           </div>
 
           <div>
-            <SiNetlify/>
+            <SiNetlify />
             <h5>Netlify</h5>
           </div>
 
           <div>
-            <SiSpring />
-            <h5>Spring</h5>
+            <SiExpress />
+            <h5>expressJs</h5>
           </div>
           <div>
             <BsBootstrap />
             <h5>Bootstrap</h5>
           </div>
           <div>
-            < SiTailwindcss/>
+            <SiTailwindcss />
             <h5>Tailwindcss</h5>
           </div>
           <div>
@@ -73,8 +67,8 @@ export const Techstacks = () => {
             <h5>Java</h5>
           </div>
           <div>
-            < SiSpringboot />
-            <h5>SpringBoot</h5>
+            <SiNextdotjs />
+            <h5>Next.js</h5>
           </div>
         </div>
       </div>

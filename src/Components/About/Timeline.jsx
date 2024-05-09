@@ -1,28 +1,28 @@
-import React from "react";
-import "./Timeline.css";
+import React from 'react';
+import './Timeline.css';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
-import WorkIcon from "@material-ui/icons/Work";
-import SchoolIcon from "@material-ui/icons/School";
-import Trainer from "@material-ui/icons"
-import StarRateIcon from "@material-ui/icons/StarRate";
-import { ThemeContext } from "../../Context/theme";
+import WorkIcon from '@material-ui/icons/Work';
+import SchoolIcon from '@material-ui/icons/School';
+import Trainer from '@material-ui/icons';
+import StarRateIcon from '@material-ui/icons/StarRate';
+import { ThemeContext } from '../../Context/theme';
 
 export const Timeline = () => {
   const [{ themename }] = React.useContext(ThemeContext);
   const [linecolor, setlinecolor] = React.useState(
-    themename === "light" ? "#23283e" : "#fcfcfc"
+    themename === 'light' ? '#23283e' : '#fcfcfc'
   );
 
   React.useEffect(() => {
-    if (themename === "dark") {
-      setlinecolor("#fcfcfc");
+    if (themename === 'dark') {
+      setlinecolor('#fcfcfc');
     } else {
-      setlinecolor("#23283e");
+      setlinecolor('#23283e');
     }
   }, [themename]);
   return (
@@ -32,25 +32,19 @@ export const Timeline = () => {
           My <span className="different">Timeline 💫</span>
         </h2>
 
-
         <VerticalTimeline lineColor={linecolor}>
-
-
-         
-
-
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={"Sept 2022"}
+            date={'Aug 2023-Present'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -62,9 +56,46 @@ export const Timeline = () => {
             <h3
               className="vertical-timeline-element-title"
               data-aos="fade-right"
+            ></h3>
+            <h4
+              className="vertical-timeline-element-subtitle"
+              data-aos="fade-right"
             >
-              
-            </h3>
+              SPM Global Technologies,Bengaluru
+            </h4>
+            <p data-aos="fade-right">
+              Successfully delivered projects showcasing expertise in React,
+              Node.js, and MongoDB, contributing to enhanced user experiences
+              and streamlined processes. Collaborated effectively within
+              cross-functional teams, ensuring timely project delivery and
+              alignment with business objectives.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date={'Sept 2022-Aug 2023'}
+            contentStyle={{
+              boxShadow: `var(--shadow)`,
+              border: '3px solid var(--clr-primary)',
+              backgroundColor: `var(--clr-bg)`,
+              textAlign: 'center',
+              color: `var(--clr-fg-alt)`,
+            }}
+            contentArrowStyle={{
+              borderRight: '16px solid  var(--clr-primary)',
+            }}
+            iconStyle={{
+              border: ` 3px solid var(--clr-primary)`,
+              backgroundColor: `var(--clr-bg)`,
+              color: `var(--clr-primary)`,
+            }}
+            icon={<SchoolIcon />}
+          >
+            <h3
+              className="vertical-timeline-element-title"
+              data-aos="fade-right"
+            ></h3>
             <h4
               className="vertical-timeline-element-subtitle"
               data-aos="fade-right"
@@ -73,27 +104,23 @@ export const Timeline = () => {
             </h4>
             <p data-aos="fade-right">
               Studied MERN stack,JAVA,AdvanceJava(Spring,SpringBoot,
-              JDBC,Hibernate)which consists of all the
-              subjects which is required in Develope applications.
+              JDBC,Hibernate)which consists of all the subjects which is
+              required in Develope applications.
             </p>
           </VerticalTimelineElement>
 
-
-
-
-
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={""}
+            date={''}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -110,22 +137,23 @@ export const Timeline = () => {
             </h3>
 
             <p data-aos="fade-right">
-              I have passed my scolling in the year of 2013 with percentage of 83.
-
+              I have passed my scolling in the year of 2013 with percentage of
+              83.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={"Jul 2016"}
+            date={'Jul 2016'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -144,25 +172,27 @@ export const Timeline = () => {
               className="vertical-timeline-element-subtitle"
               data-aos="fade-right"
             >
-              Galgotias College of Engineering & Technology (GCET) ,Greater Noida
+              Galgotias College of Engineering & Technology (GCET) ,Greater
+              Noida
             </h4>
             <p data-aos="fade-right">
-              Studied Electrical Engineering which consists of all the
-              subjects accross all engineering and Electrical streams.
+              Studied Electrical Engineering which consists of all the subjects
+              accross all engineering and Electrical streams.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={"March 2013"}
+            date={'March 2013'}
             contentStyle={{
               boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
+              border: '3px solid var(--clr-primary)',
               backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
+              textAlign: 'center',
               color: `var(--clr-fg-alt)`,
             }}
             contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
+              borderRight: '16px solid  var(--clr-primary)',
             }}
             iconStyle={{
               border: ` 3px solid var(--clr-primary)`,
@@ -184,8 +214,8 @@ export const Timeline = () => {
               Utkalmani Gopabandhu Institute of Engineering, Rourkela
             </h4>
             <p data-aos="fade-right">
-              Studied Electrical Engineering which consists of all the
-              subjects accross all engineering and Electrical streams.
+              Studied Electrical Engineering which consists of all the subjects
+              accross all engineering and Electrical streams.
             </p>
           </VerticalTimelineElement>
 
