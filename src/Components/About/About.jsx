@@ -1,16 +1,16 @@
-import React from "react";
-import "./About.css";
-import { Type } from "./Type";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneIcon from "@material-ui/icons/Phone";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import { Facebook } from "@material-ui/icons";
+import React from 'react';
+import './About.css';
+import { Type } from './Type';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+import PhoneIcon from '@material-ui/icons/Phone';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import { Facebook } from '@material-ui/icons';
 // import PublicIcon from "@material-ui/icons/Public";
-import { Introduction } from "./Introduction";
-import { Timeline } from "./Timeline";
-import { Techstacks } from "./Techstacks";
+import { Introduction } from './Introduction';
+import { Timeline } from './Timeline';
+import { Techstacks } from './Techstacks';
 // import Button from "@mui/material/Button";
 export const About = () => {
   return (
@@ -69,9 +69,8 @@ export const About = () => {
             target="_blank"
             rel="noreferrer"
           >
-            < Facebook/>
+            <Facebook />
           </a>
-
 
           <a
             href="https://twitter.com/_yasowant"
@@ -88,7 +87,7 @@ export const About = () => {
           className="btnResume"
           onClick={() => {
             window.open(
-              "https://drive.google.com/file/d/1CyNCgeYZn0Og-592L0j3c7Wy54zkKNrb/view?usp=share_link"
+              'https://drive.google.com/file/d/1CyNCgeYZn0Og-592L0j3c7Wy54zkKNrb/view?usp=share_link'
             );
           }}
         >

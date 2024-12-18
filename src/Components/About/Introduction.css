@@ -16,8 +16,8 @@
 }
 
 .introduction_logocontainer > img {
-  width: 65%;
-  height: 85%;
+  width: 85%;
+  height: auto;
   /* border-radius: 50%; */
   border: 2px solid var(--clr-primary);
 }
@@ -60,7 +60,7 @@
   .introduction_logocontainer > img {
     width: 60%;
     height: 100%;
-    border-radius: 20px;  
+    border-radius: 20px;
     border-radius: 50%;
     border: 2px solid var(--clr-primary);
   }
